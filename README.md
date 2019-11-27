@@ -17,12 +17,11 @@
 箭头函数直接返回
 普通功函数 正则匹配函数体和函数参数
 
-
-   if (!source.prototype) return source
-   const sourceString = source.toString()
-   let body: string = sourceString.match(/(?<={)(.*\n*)(?=})/m)[0]
-   let params: string = sourceString.match(/(?<=\().*(?=\)\s*{)/)[0]
-   dist = new Function(...params.split(','), body)
+    if (!source.prototype) return source
+    const sourceString = source.toString()
+    let body: string = sourceString.match(/(?<={)(.*\n*)(?=})/m)[0]
+    let params: string = sourceString.match(/(?<=\().*(?=\)\s*{)/)[0]
+    dist = new Function(...params.split(','), body)
 
 
 ### 正则
