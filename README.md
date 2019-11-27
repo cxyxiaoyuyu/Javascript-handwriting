@@ -17,6 +17,7 @@
 箭头函数直接返回
 普通功函数 正则匹配函数体和函数参数
 
+
    if (!source.prototype) return source
    const sourceString = source.toString()
    let body: string = sourceString.match(/(?<={)(.*\n*)(?=})/m)[0]
