@@ -1,21 +1,44 @@
-# 深拷贝
+## 深拷贝
 
-## 基本数据类型
+### 基本数据类型
 
-## 普通对象
+直接返回
 
-## 数组
+### 普通对象
 
-## 函数
+递归实现
 
-## 正则
+### 数组
 
-## 日期
+递归实现
 
-## 环
+### 函数
 
-## 跳过原型属性
+箭头函数直接返回
+普通功函数 正则匹配函数体和函数参数
 
-# 测试
+`  if (!source.prototype) return source
+   const sourceString = source.toString()
+   let body: string = sourceString.match(/(?<={)(.*\n*)(?=})/m)[0
+   let params: string = sourceString.match(/(?<=\().*(?=\)\s*{)/)[0]
+   dist = new Function(...params.split(','), body)
+`
 
-## npm testOA
+### 正则
+
+获取source flags
+
+    dist = new RegExp(source.source, source.flags);
+
+### 日期
+  
+    dist = new Date(source)
+
+### 环
+   添加cache 判断是否已经克隆过该对象
+
+### 跳过原型属性
+
+## 测试
+
+### npm testOA
