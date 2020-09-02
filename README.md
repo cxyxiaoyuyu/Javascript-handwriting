@@ -1,4 +1,4 @@
-## 手写深拷贝
+## 1 手写深拷贝
 
 ### 基本数据类型
 
@@ -42,7 +42,7 @@ dist = new Date(source)
 
 ### 跳过原型属性
 
-## 手写instanceof
+## 2 手写 instanceof
 > instanceof 运算符用于检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上
 
 一般情况下instanceof 不能判断基本类型
@@ -52,7 +52,7 @@ dist = new Date(source)
 true instanceof Boolean   // false
 ```
 
-## 手写eventHub
+## 3 手写 eventHub
 
-## 手写Promise
+## 4 手写 Promise
 
