@@ -44,6 +44,14 @@
 ### npm testOA
 
 ## 手写instanceof
+> instanceof 运算符用于检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上
+一般情况下instanceof 不能判断基本类型
+
+``` javascript
+'abc' instanceof String   // false
+123 instanceof Number     // false
+true instanceof Boolean   // false
+```
 
 ## 手写eventHub
 
